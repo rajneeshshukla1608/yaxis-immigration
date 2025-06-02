@@ -7,9 +7,6 @@ import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
-// Conversion rate
-const USD_TO_INR = 83;
-
 interface CheckoutModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -30,16 +27,15 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   }, []);
 
   const formatPrice = (price: number) => {
-    const inrPrice = price * USD_TO_INR;
-    return new Intl.NumberFormat('en-IN', {
+    return new Intl.NumberFormat('en-US', {
       style: 'currency',
-      currency: 'INR',
-      maximumFractionDigits: 0
-    }).format(inrPrice);
+      currency: 'USD',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).format(price);
   };
 
   const handleCheckout = async () => {
-
     if (!userId) {
       toast.error('Please login to continue');
       return;

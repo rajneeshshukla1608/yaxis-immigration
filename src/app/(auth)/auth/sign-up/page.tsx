@@ -36,6 +36,7 @@ const Signup = () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
   // Password validation - at least 8 characters, 1 uppercase, 1 lowercase, 1 number
+  // Special characters allowed: @$!%*?&
   const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,}$/;
 
   const validateField = (id: string, value: string) => {
