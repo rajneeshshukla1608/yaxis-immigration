@@ -2,8 +2,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+# Y-Axis Immigration Frontend
 
+A modern web application for visa and immigration services built with Next.js, TypeScript, and Tailwind CSS.
+
+## Quick Start
+
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+   cd yaxis-immigration
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 ```bash
 npm run dev
 # or
