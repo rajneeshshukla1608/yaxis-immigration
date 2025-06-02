@@ -48,6 +48,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       toast.success('Order placed successfully!');
       onClose();
       // Redirect to orders page
+      router.push('/orders');
     } catch (err) {
       toast.error('Failed to place order');
       console.error('Error placing order:', err);
