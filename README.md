@@ -6,6 +6,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 A modern web application for visa and immigration services built with Next.js, TypeScript, and Tailwind CSS.
 
+## Prerequisites
+- Node.js (v16 or higher)
+- npm (comes with Node.js)
+- Git
+
+
 ## Quick Start 
 
 1. **Clone the Repository** 
